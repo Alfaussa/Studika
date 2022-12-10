@@ -12,15 +12,41 @@ html, body{
 
 body {
     font-size: $baseFontSize;
-    font-family:'Open Sans';
+    font-family: 'Open Sans';
     position: relative;
 }
 
-wrapper{
+.wrapper{
     position: relative;
     width: 100%;
     min-width: $containerWidth + 20px;
     min-height: 100%;
     overflow: hidden;
+}
 
+header {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+  
+
+}
+.search-form {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.menu{
+    width: 100%;
+}
+
+.menu-list {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.menu_link{
+   
+    text-decoration: none;
 }

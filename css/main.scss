@@ -48,6 +48,32 @@ display: flex;
 .location_img {
     height:32px;
 }
+
+input {
+    width:592px;
+    height: 48px;
+    border-radius: 30px;
+    background:#F1F1F1;
+    background-image:  url(/images/Union.png);   
+    background-repeat: no-repeat;  
+    background-position: 4px; 
+ 
+    border:0;
+}
+input::-webkit-input-placeholder {
+    text-align: center;
+    }
+input:-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+    }
+input::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+    }
+input:-ms-input-placeholder {
+    text-align: center;
+    }
+      
+
 .user {
     display: flex;
 }

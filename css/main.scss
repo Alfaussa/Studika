@@ -5,6 +5,7 @@ $baseFontSize:14px;
 //normalize
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
 
 html, body{
     height:100%;
@@ -28,6 +29,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction:column;
+    height:136 px;
   
 
 }
@@ -35,6 +37,19 @@ header {
     display: flex;
     width:100%;
     justify-content: space-between;
+}
+.logo{
+    height:24px;
+    
+}
+.location {
+display: flex;
+}
+.location_img {
+    height:32px;
+}
+.user {
+    display: flex;
 }
 .menu{
     width: 100%;

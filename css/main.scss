@@ -1,37 +1,51 @@
-$containerWidth:940px;
+$containerWidth:1216px;
 $baseFontSize:14px;
 
 
 //normalize
-@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css);
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400);
-
+*{
+    box-sizing: border-box;
+}
 html, body{
     height:100%;
 }
+ul li {margin-right: 0;}
 
 body {
     font-size: $baseFontSize;
     font-family: 'Open Sans';
+    color: #222222;
     position: relative;
+  
 }
 
 .wrapper{
     position: relative;
-    width: 100%;
-    min-width: $containerWidth + 20px;
-    min-height: 100%;
+  width: 100%;
+  min-height: 100%;
     overflow: hidden;
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: center;
 }
 
+.container{
+    width: 95%;
+    max-width: $containerWidth;
+    position: relative;
+    background: #FFFFFF;
+
+}
 header {
     display: flex;
-    align-items: center;
     flex-direction:column;
-    height:136 px;
+    max-height: 136px;
+    margin: 24px 0 18.5px 0 ;
+    justify-content:space-around;
   
-
 }
 .search-form {
     display: flex;
@@ -39,14 +53,27 @@ header {
     justify-content: space-between;
 }
 .logo{
-    height:24px;
+    height: 24px;
+    width: 44px;
+    padding-top: 10px;
     
 }
-.location {
+.location, .like {
 display: flex;
+padding: 10px;
+}
+
+.location {
+    margin-right: 51px;
 }
 .location_img {
     height:32px;
+}
+.location_city, .like_number {
+    padding:10px;
+}
+.search-field{
+    margin-right: 173px;
 }
 
 input {
@@ -56,7 +83,7 @@ input {
     background:#F1F1F1;
     background-image:  url(/images/Union.png);   
     background-repeat: no-repeat;  
-    background-position: 4px; 
+    background-position: 15px; 
  
     border:0;
 }
@@ -72,18 +99,31 @@ input::-moz-placeholder { /* Firefox 19+ */
 input:-ms-input-placeholder {
     text-align: center;
     }
-      
-
+   
+.like_img{
+   
+    padding: 11px 0 10px 10px;
+}
 .user {
     display: flex;
+    padding: 10px;
 }
-.menu{
-    width: 100%;
+ .user_pic{
+height: 32px; 
+
 }
+.user-name {
+padding: 10px 10px 00;
+}
+
+// .menu{
+   
+// }
 
 .menu-list {
     display: flex;
     width:100%;
+    padding: 5px 0 5px 0;
     justify-content: space-between;
     list-style-type:none;
 }
